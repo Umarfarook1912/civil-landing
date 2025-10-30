@@ -13,20 +13,20 @@ import { Footer } from '../components/layout/Footer';
 import { ScrollToTop } from '../components/common/ScrollToTop';
 
 export const HomePage: React.FC = () => {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <HeroSection />
-      <FeaturesSection />
-      <AllAppsSection />
-      <IncludedAppsSection />
-      <CreativeCloudLogoSection />
-      <PricingSection />
-      <TestimonialsSection />
-      <FAQSection />
-      <ContactSection />
-      <Footer />
-      <ScrollToTop />
-    </div>
-  );
+    return (
+        <div className="min-h-screen bg-white pt-16">
+            <Header />
+            <HeroSection />
+            <FeaturesSection />
+            <AllAppsSection />
+            <IncludedAppsSection />
+            <CreativeCloudLogoSection />
+            <PricingSection />
+            <TestimonialsSection />
+            <FAQSection />
+            <ContactSection />
+            <Footer />
+            <ScrollToTop />
+        </div>
+    );
 };

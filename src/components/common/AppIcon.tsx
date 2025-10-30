@@ -7,19 +7,21 @@ interface AppIconProps {
     textColor?: string;
     /** optional absolute URL to an icon image (PNG/SVG). If provided, image will be shown instead of the name initials */
     iconUrl?: string;
+    /** optional size classes to control icon square size, defaults to w-20 h-20 */
+    sizeClass?: string;
 }
 
 export const AppIcon: React.FC<AppIconProps> = ({
     name,
     label,
     bgColor,
-    textColor = 'text-white'
-    ,
-    iconUrl
+    textColor = 'text-white',
+    iconUrl,
+    sizeClass = 'w-20 h-20'
 }) => {
     return (
         <div className="flex flex-col items-center gap-3">
-            <div className={`${bgColor} w-20 h-20 rounded-2xl flex items-center justify-center shadow-lg hover:scale-105 transition-transform overflow-hidden`}>
+            <div className={`${bgColor} ${sizeClass} rounded-2xl flex items-center justify-center shadow-lg hover:scale-105 transition-transform overflow-hidden`}>
                 {iconUrl ? (
                     <img
                         src={iconUrl}

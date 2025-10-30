@@ -26,9 +26,9 @@ export const FAQSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-gray-50 px-4 py-16 lg:py-24 lg:px-8">
+    <section className="bg-white px-4 py-16 lg:py-20 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-12 lg:mb-16">
+        <h2 className="text-3xl lg:text-[40px] font-bold text-gray-900 text-center mb-12 lg:mb-14">
           Frequently Asked Questions
         </h2>
 
